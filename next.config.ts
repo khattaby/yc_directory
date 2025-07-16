@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import build from "next/dist/build";
 
 const nextConfig = {
   images: {
@@ -10,6 +11,14 @@ const nextConfig = {
       },
     ],
   },
+  experimental:{
+    ppr: "incremental",
+  },
+  devIndicators:{
+    appIsStatus: true,
+    buildActivity: true,
+    buildActivityPosition: "bottom-right",
+  }
 };
 
 export default nextConfig;
