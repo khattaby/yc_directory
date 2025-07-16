@@ -6,19 +6,20 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     remotePatterns: [
       {
-        protocol: 'https',
+        protocol: "https",
         hostname: "**",
       },
     ],
   },
-  experimental:{
+  experimental: {
     ppr: "incremental",
+    after: true,
   },
-  devIndicators:{
+  devIndicators: {
     appIsStatus: true,
     buildActivity: true,
     buildActivityPosition: "bottom-right",
-  }
+  },
 };
 
 export default nextConfig;
