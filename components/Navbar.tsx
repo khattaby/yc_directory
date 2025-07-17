@@ -29,7 +29,7 @@ const Navbar = async () => {
                   await signOut({ redirectTo: "/" });
                 }}
               >
-                <button type="submit">
+                <button className="cursor-pointer" type="submit">
                   <span className="max-sm:hidden">Logout</span>
                   <LogOut className="size-6 sm:hidden text-red-500" />
                 </button>
@@ -53,7 +53,7 @@ const Navbar = async () => {
                 await signIn("github");
               }}
             >
-              <button type="submit">Login</button>
+              <button type="submit" className="cursor-pointer">Login</button>
             </form>
           )}
         </div>
